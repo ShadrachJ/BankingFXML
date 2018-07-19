@@ -1,0 +1,53 @@
+.root{
+	-fx-font: 12px "Lucida Console";
+	-fx-background-image: url("CSSBackground.JPG");
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-focus-color: transparent;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #ffffff;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3CE7F0;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #3CE7F0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+}
+
+.button{
+	-fx-background-color: 
+        #a6b5c9,
+        linear-gradient(#303842 0%, #3CE7F0 20%, #3CE7F0 100%),
+        linear-gradient(#768aa5 0%, #3CE7F0 5%, #3CE7F0 50%, #3CE7F0 51%, #3CE7F0 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-focus-color: transparent;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="570.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <tabs>
+    <Tab text="Create Checking">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="36.0" prefWidth="116.0" text="Customer Name" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="36.0" prefWidth="116.0" text="Account Balance" />
+                  <TextField fx:id="txtCheckingName" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input customer name" />
+                  <TextField fx:id="txtCheckingBalance" layoutX="153.0" layoutY="116.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input account balance" />
+                  <Button fx:id="btnCreateChecking" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#createChecking" prefHeight="25.0" prefWidth="300.0" text="Create Checking Account" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Create Gold">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="36.0" prefWidth="116.0" text="Customer Name" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="36.0" prefWidth="116.0" text="Account Balance" />
+                  <TextField fx:id="txtGoldName" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input customer name" />
+                  <TextField fx:id="txtGoldBalance" layoutX="153.0" layoutY="116.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input account balance" />
+                  <Button fx:id="btnCreateGold" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#createGold" prefHeight="25.0" prefWidth="300.0" text="Create Gold Account" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Create Regular">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="36.0" prefWidth="116.0" text="Customer Name" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="36.0" prefWidth="116.0" text="Account Balance" />
+                  <TextField fx:id="txtRegularName" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input customer name" />
+                  <TextField fx:id="txtRegularBalance" layoutX="153.0" layoutY="116.0" prefHeight="25.0" prefWidth="250.0" promptText="Please input account balance" />
+                  <Button fx:id="btnCreateRegular" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#createRegular" prefHeight="25.0" prefWidth="300.0" text="Create Regular Account" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Deposit">
+         <content>
+            <AnchorPane accessibleRole="TEXT_FIELD" minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="428.0">
+               <children>
+                  <Button fx:id="btnDeposit" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#deposit" prefHeight="25.0" prefWidth="300.0" text="Deposit Into Account" />
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="38.0" prefWidth="118.0" text="Deposit amount:" />
+                  <TextField fx:id="txtDepositAmount" accessibleRole="TOGGLE_BUTTON" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="211.0" promptText="Enter amount" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="37.0" prefWidth="115.0" text="AccountID" />
+                  <TextField fx:id="txtDepositID" layoutX="153.0" layoutY="116.0" prefHeight="25.0" prefWidth="211.0" promptText="Enter Account ID" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Withdraw">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="428.0">
+               <children>
+                  <Button fx:id="btnWithdraw" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="25.0" prefWidth="300.0" text="Make a Withdrawal" />
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="35.0" prefWidth="195.0" text="Withdrawal Amount:" />
+                  <TextField fx:id="txtWithdrawalAmount" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="261.0" promptText="Enter Withdrawal Amount" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="30.0" prefWidth="198.0" text="AccountID" />
+                  <TextField fx:id="txtWithdrawalID" layoutX="153.0" layoutY="116.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter Account ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Display Account">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="428.0">
+               <children>
+                  <Button fx:id="btnDisplayAccount" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#displayAccount" prefHeight="25.0" prefWidth="300.0" text="Display Account" />
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="38.0" prefWidth="198.0" text="Enter Account ID: " />
+                  <TextField fx:id="txtDisplayAccountID" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="244.0" promptText="Enter Account ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Remove Account">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="428.0">
+               <children>
+                  <Button fx:id="btnRemoveAccount" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#removeAccount" prefHeight="25.0" prefWidth="300.0" text="Remove Account" />
+                  <Label layoutX="14.0" layoutY="33.0" prefHeight="48.0" prefWidth="190.0" text="Enter Account ID: " />
+                  <TextField fx:id="txtRemoveAccountID" layoutX="153.0" layoutY="39.0" prefHeight="25.0" prefWidth="239.0" promptText="Enter Account ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Apply End of Month Banking">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutY="98.0" prefHeight="164.0" prefWidth="600.0" text="By pressing the button bellow, monthly upkeep will be conducted for all accounts presently within the system. For checking accounts, this will include a $3 transaction fee for every transaction after the two monthly free transactions. For a regular account, this will include a $10 fee for upkeep, and 6% interest applied to the account. For golden accounts, this will incur no charge, and will have an interest rate of 5%." wrapText="true" />
+                  <Button fx:id="btnUpkeep" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#conductUpkeep" prefHeight="25.0" prefWidth="300.0" text="Conduct Upkeep" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Display Bank Statistics">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="45.0" layoutY="53.0" text="Zero Balance Accounts:" />
+                  <Label layoutX="45.0" layoutY="95.0" text="Total Bank-Wide Balance:" />
+                  <Label layoutX="45.0" layoutY="138.0" text="Highest Individual Balance:" />
+                  <Label layoutX="45.0" layoutY="177.0" text="Average Account Balance:" />
+                  <TextField fx:id="txtAverageBalance" editable="false" layoutX="254.0" layoutY="173.0" prefHeight="25.0" prefWidth="270.0" promptText="number will be displayed here" />
+                  <Button fx:id="btnDisplayStatistics" layoutX="150.0" layoutY="325.0" mnemonicParsing="false" onAction="#displayStatistics" prefHeight="25.0" prefWidth="300.0" text="Display Statistics" />
+                  <TextField fx:id="txtZeroBalance" editable="false" layoutX="253.0" layoutY="49.0" prefHeight="25.0" prefWidth="271.0" promptText="number will be displayed here" />
+                  <TextField fx:id="txtTotalBalance" editable="false" layoutX="253.0" layoutY="91.0" prefHeight="25.0" prefWidth="272.0" promptText="number will be displayed here" />
+                  <TextField fx:id="txtIndividualBalance" editable="false" layoutX="254.0" layoutY="134.0" prefHeight="25.0" prefWidth="271.0" promptText="number will be displayed here" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
